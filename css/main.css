@@ -2,3 +2,88 @@ body {
   text-align: center;
   font-family: 'Rubik', 'sans-serif';
 }
+
+.main-container header {
+  background-image: url('../img/bgprofile.jpg');
+  background-position: 70% 20%;
+  color: white;
+  border-radius: 5px;
+}
+
+.main-container header .header-bg {
+  background-image: linear-gradient(to bottom, black, transparent);
+  border-radius: inherit;
+  padding: 1rem;
+}
+
+.main-container header .header-bg img {
+  width: 75px;
+  height: 75px;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .main-container header .header-bg img {
+    display: none;
+  }
+}
+
+.main-container header .header-bg .header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container header .header-bg .header-title h1 {
+  font-weight: bold;
+}
+
+.main-container a.link {
+  text-decoration: none;
+}
+
+.main-container a.link .content {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear;
+  margin-bottom: 1rem;
+}
+
+.main-container a.link:hover .content {
+  color: black;
+  background-color: white;
+  box-shadow: 3px 3px 10px black;
+}
+
+.main-container a.link.general-link .content i {
+  margin-right: 1rem;
+}
+
+.main-container a.link.youtube-link .content img {
+  width: 75px;
+  height: 75px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  flex: 0 0 75px;
+}
+
+.main-container a.link .content .text {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-container a.link .content .text h3 {
+  font-weight: bold;
+  margin-top: 0; 
+  margin-bottom: 0;
+}
