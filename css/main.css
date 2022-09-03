@@ -5,15 +5,16 @@ body {
 
 .main-container header {
   background-image: url('../img/bgprofile.jpg');
-  background-position: 0% 100%;
+  background-position: 50% 100%;
   color: white;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .main-container header .header-bg {
   background-image: linear-gradient(to bottom, black, transparent);
   border-radius: inherit;
-  padding: 2rem;
+  padding: 4rem 1rem;
 }
 
 .main-container header .header-bg img {
@@ -24,6 +25,10 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .main-container header .header-bg {
+    padding: 2rem 1rem;
+  }
+
   .main-container header .header-bg img {
     display: none;
   }
@@ -43,7 +48,7 @@ body {
   text-decoration: none;
 }
 
-.main-container a.link .content {
+.main-container .content {
   border: 1px solid black;
   display: flex;
   align-items: center;
@@ -56,17 +61,11 @@ body {
   margin-bottom: 1rem;
 }
 
-.main-container a.link:hover .content {
-  color: black;
-  background-color: white;
-  box-shadow: 3px 3px 10px black;
-}
-
-.main-container a.link.general-link .content i {
+.main-container .content i {
   margin-right: 1rem;
 }
 
-.main-container a.link.youtube-link .content img {
+.main-container .content img {
   width: 75px;
   height: 75px;
   margin-right: 1rem;
@@ -74,7 +73,7 @@ body {
   flex: 0 0 75px;
 }
 
-.main-container a.link .content .text {
+.main-container .content .text {
   flex: 1;
   text-align: left;
   white-space: nowrap;
@@ -82,8 +81,51 @@ body {
   text-overflow: ellipsis;
 }
 
-.main-container a.link .content .text h3 {
+.main-container .youtube-link .content img {
+  width: 75px;
+  height: 75px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  flex: 0 0 75px;
+}
+
+.main-container .content .text {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-container .content .text h3 {
   font-weight: bold;
   margin-top: 0; 
   margin-bottom: 0;
+}
+
+.main-container a.link .content {
+  box-shadow: 5px 5px 8px black;
+}
+
+.main-container a.link:hover .content {
+  color: black;
+  background-color: white;
+}
+
+.main-container footer {
+  background-image: url('../img/bgprofile.jpg');
+  background-position: 0% 100%;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-container footer .footer-bg {
+  background-color: #333;
+  border-radius: inherit;
+  padding: 1rem;
+}
+
+.main-container footer .footer-bg .footer-content {
+  border-radius: 5px;
 }
