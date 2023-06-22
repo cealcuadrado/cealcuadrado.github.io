@@ -5,14 +5,13 @@ body {
 
 .main-container header {
   background-image: url('../img/bgprofile.jpg');
-  background-position: 50% 100%;
+  background-position: 50% 50%;
   color: white;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .main-container header .header-bg {
-  background-image: linear-gradient(to bottom, black, transparent);
+  background-color: rgba(0,0,0,0.75);
   border-radius: inherit;
   padding: 4rem 1rem;
 }
