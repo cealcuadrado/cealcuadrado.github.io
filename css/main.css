@@ -1,0 +1,54 @@
+body {
+  font-family: 'Sniglet', 'sans-serif';
+}
+
+header img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+header .cuerpo-cabecera {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contenido {
+  text-align: center;
+}
+
+.contenido .links-principales, .contenido .youtube, .contenido .contacto {
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+main .link {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  width: inherit;
+}
+
+main .link .cuerpo-link {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 5px black;
+}
+
+main .link .cuerpo-link img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
